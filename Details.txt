@@ -20,4 +20,11 @@ Page requirements:
   Sign-in<navigation> Ryan
   
   Map Page<LINKS FROM ALL PAGES EXCEPT FOOTERS>
+  
+  FONTS:
+  Headings: Google Fonts: Nanum Gothic
+  Paragraphs: Google Fonts: Montserrat
+  
+  Meeting @12pm Monday 26th
+  
   
