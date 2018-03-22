@@ -1,0 +1,23 @@
+# WandDC-group2-5
+W&amp;DC group2-5 work
+
+
+Page requirements:
+
+  Index Page<index> Xing
+  Refinement Page<2> Xing
+  
+  Hotel Page<3> Ryan
+  
+  Booking Page<3> Michael
+  
+  About Us<footer> Michael
+  Contact Us<footer> Michael
+  Terms Of Use<footer> Xing
+  
+  Accounts/Profile<navigation> Xing
+  Sign-up<navigation> Ryan
+  Sign-in<navigation> Ryan
+  
+  Map Page<LINKS FROM ALL PAGES EXCEPT FOOTERS>
+  
