@@ -1,0 +1,56 @@
+div {
+	padding:0px;
+	margin:0px;
+	border:0px;
+}
+body #container{
+	width:1200px;
+	border:1px solid black;
+	margin:10px auto 40px auto;
+	background-color:yellow;
+}
+
+#container #top{
+	height:50px;
+	width:1200px;
+}
+
+#container #top #logo{
+	float:left;
+	width:90px;
+	height:50px;
+	background-color:blue;
+}
+
+#container #top #currency{
+	float:right;
+	margin-right:10px;
+	width:180px;
+	height:50px;
+	background-color:green;
+}
+
+#container #top #navigation{
+	float:right;
+	width:640px;
+	height:50px;
+	background-color:blue;
+}
+#container #search{
+	width:1200px;
+	height:370px;
+	background-color:blue;
+	margin-top:20px;
+}
+#container #trending{
+	width:1200px;
+	height:70px;
+	background-color:blue;
+	margin-top:20px;
+}
+#container #more-info{
+	width:1200px;
+	height:340px;
+	background-color:blue;
+	margin-top:30px;
+}
