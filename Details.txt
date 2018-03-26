@@ -28,3 +28,11 @@ Page requirements:
   Meeting @12pm Monday 26th
   
   
+  
+  Session 2 Notes:
+  Drop down boxes
+  Fixup layout for Xings layout
+  Highlight clickable options onmouseover
+  currency drop down box: AUD USD EUR RMB 
+  
+  Meeting @1PM Wednesday
