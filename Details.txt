@@ -36,3 +36,8 @@ Page requirements:
   currency drop down box: AUD USD EUR RMB 
   
   Meeting @1PM Wednesday
+  
+  
+  #8C8C8C background colour
+  #E6E6E6 navigation bar
+  #CCCCCC hover-over color
