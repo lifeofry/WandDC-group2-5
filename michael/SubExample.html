@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head class = "headpage">
+<title> Booking Page </title>
+	<link rel="stylesheet" type="text/css" href="BookingPage.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic" rel="stylesheet">
+</head>
+<body class ="headpage">
+	<script src="BookingPage.js"></script>
+<ol class = "nav">
+	<a style="float:left">Booking your Stay</a>
+
+	<a style="float:right">Navigation Bar</a>
+		<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn" placeholder="$AUD">Currency</button>
+  <div id="myDropdown" class="dropdown-content" style="float:right">
+    <a href="$AUD">$AUD</a>
+    <a href="€Euro">&euro;Euro</a>
+    <a href="$USD">$USD</a>
+    <a href="£GBP">£GBP</a>
+  </div>
+</div>
+</ol>
+<br>
+<br>
+<div  class = "info2"> 
+	<label for="Check-In">Check-In</label>
+	<input id="Check-In" type="text" placeholder="Check-in" value="28-Mar-2018" onloadstart="defaultDate()"><br><br>
+	<label for="Check-Out">Check-Out</label>
+	<input id="date" type="text" placeholder="Check-Out" value="05-Apr-2018"><br><br>
+	<label for="People" >People</label>
+	<input type ="text" placeholder="People" value="2"></input><br><br>
+</div>
+<div class = "info2">
+	<label for="First Name">First Name</label>
+	<input type="text" placeholder="First Name" value="John"></input><br><br>
+	<label for="Last Name">Last Name</label>
+	<input type = "text" placeholder="Last Name" value="Smith"></input><br><br>
+	<label for="Email">Email</label>
+	<input type = "text" placeholder="Email" value="john.smith@gmail.com"></input><br><br>
+	<label for="Country">Country</label>
+	<input type = "text" placeholder="Country" value="Australia"></input><br><br>
+	<a class="submit" href="" >SUBMIT</a>
+</div>
+<p class="img">
+	3 images here
+</p>
+
+<footer>
+	<ol class = "foot">
+		<a href=""> About Us</a>
+		<a href=""> Contact Us</a>
+		<a href=""> Home </a>
+	</ol>
+</footer>
+
+</body>
+</html>
