@@ -39,5 +39,5 @@ Page requirements:
   
   
   #8C8C8C background colour
-  #E6E6E6 navigation bar
-  #CCCCCC hover-over color
+  #E6E6E6 navigation bar colour
+  #CCCCCC hover-over colour
