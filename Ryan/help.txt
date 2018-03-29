@@ -1,0 +1,6 @@
+LogIn.html
+LogIn.css
+SignUp.html
+SignUp.css
+HotelsPage.html
+HotelsPage.css
