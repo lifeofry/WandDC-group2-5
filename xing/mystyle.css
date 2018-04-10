@@ -1,0 +1,154 @@
+div,img,p,body,ul,li,h2 {
+	margin:0px;
+	border:0px;
+}
+body #container{
+	width:1200px;
+	margin:10px auto 40px auto;
+	
+}
+body{
+	background-color:#F4F4F4;
+}
+#mid-top{
+	width:1300px;
+	color:white;
+	height:800px;
+	margin:0px auto;
+	padding-top:20px;
+	
+}
+
+
+#l_content{
+	background-color:#2C4162;
+	width:800px;
+	height:500px;
+	float:left;
+	
+}
+#r_content{
+	float:right;
+	width:500px;
+	height:800px;
+
+}
+#top{
+	height:50px;
+	width:100%;
+	background-color:#00AEF0;
+}
+
+ #top #logo{
+	color:white;
+	float:left;
+	
+}
+
+ #top #currency{
+
+	color:white;
+	font-size:0.8em;
+	float:right;
+	margin-right:10px;
+	width:180px;
+	height:50px;
+	
+}
+.floatleft{
+	float:left;
+}
+.floatright{
+	float:right;
+}
+.center{
+	margin:10px auto;
+}
+#top #navigation{
+	float:right;
+	width:640px;
+	height:50px;
+	background-color:#00AEF0;
+}
+#container #content{
+	
+	margin-bottom:40px;
+	margin-top:40px;
+	width:100%;
+}
+#container #content #left{
+	float:left;
+	width:260px;
+	height:800px;
+	
+}
+#container #content #left #search{
+	width:260px;
+	height:430px;
+	background-color:#2C4162;
+}
+#container #content #left #refine{
+	width:260px;
+	background-color:white;
+	margin-top:20px;
+}
+#container #content #right{
+	margin-left:280px;
+	width:920px;
+	
+}
+#container #content #right #destInfo{
+	width:100%;
+	height:125px;
+	
+}
+#container #content #right #searchResultList{
+	width:100%;
+	height:80%;
+	background-color:white;
+	margin-top:50px;
+}
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 90px;
+    overflow: hidden;
+    background-color:#00AEF0;
+}
+
+ul.nav li {
+   float: left;
+    font-family:'Raleway',"Sans serif";
+    font-size:0.8em;
+	list-style-type:none;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+	color: Darkgrey;
+    background-color: white;
+}
+#hotelitem h2 {
+	margin:0 5px;
+}
+#icon{
+background-image:url(a.png); 
+padding-left:30px;
+background-repeat: no-repeat; 
+background-position: 2px 3px;
+}
+#search-button{
+	width:200px;
+	text-align:center;
+	height:50px;
+	border-radius:10px;
+	color:white;
+	margin:30px auto;
+	background-color:#11B95C;
+}
