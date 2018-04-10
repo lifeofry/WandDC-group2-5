@@ -1,5 +1,4 @@
-div,img,p,ul,li,h2 {
-	padding:0px;
+div,img,p,body,ul,li,h2 {
 	margin:0px;
 	border:0px;
 }
@@ -10,6 +9,29 @@ body #container{
 }
 body{
 	background-color:#F4F4F4;
+}
+#mid-top{
+	width:1300px;
+	color:white;
+	height:800px;
+	margin:0px auto;
+	padding-top:20px;
+	
+}
+
+
+#l_content{
+	background-color:#2C4162;
+	width:800px;
+	height:500px;
+	float:left;
+	
+}
+#r_content{
+	float:right;
+	width:500px;
+	height:800px;
+
 }
 #top{
 	height:50px;
@@ -115,4 +137,18 @@ li a:hover {
 #hotelitem h2 {
 	margin:0 5px;
 }
-
+#icon{
+background-image:url(a.png); 
+padding-left:30px;
+background-repeat: no-repeat; 
+background-position: 2px 3px;
+}
+#search-button{
+	width:200px;
+	text-align:center;
+	height:50px;
+	border-radius:10px;
+	color:white;
+	margin:30px auto;
+	background-color:#11B95C;
+}
