@@ -156,10 +156,10 @@ background-position: 2px 3px;
 .dropbtn {
     background-color: #00AEF0;
     color: white;
-    padding: 13px 0px;
-    font-size: 0.8em;
     border: none;
     cursor: pointer;
+    padding: 12px;
+    font-size:1em;
     
 }
 
