@@ -7,22 +7,39 @@
 </head>
 <body class ="headpage">
 	<script src="BookingPage.js"></script>
-<ol class = "nav">
-	<a style="float:left">Booking your Stay</a>
+			<div class="top">
+				<div class ="topcontent">
+			<ol class = "nav">
+				<a id ="linkpage.index" href="index.html">
+				<img src="loto.svg" alt ="" width="200" height="50">
+				<a style="float:left">Booking your Stay</a>
+					<div class="dropdown">
+  				
+  					<button onclick="myFunction()" class="dropbtn" placeholder="$AUD">Currency</button>
+  			
+  						<div id="myDropdown" class="dropdown-content" style="float:center">
+    						<a href="$AUD">$AUD</a>
+    						<a href="€Euro">&euro;Euro</a>
+    						<a href="$USD">$USD</a>
+    						<a href="£GBP">£GBP</a>
 
-	<a style="float:right">Navigation Bar</a>
-		<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn" placeholder="$AUD">Currency</button>
-  <div id="myDropdown" class="dropdown-content" style="float:right">
-    <a href="$AUD">$AUD</a>
-    <a href="€Euro">&euro;Euro</a>
-    <a href="$USD">$USD</a>
-    <a href="£GBP">£GBP</a>
-  </div>
-</div>
-</ol>
+  						</div>
+  						<li style="float:right; display:block"><a>Sign in</a></li>
+						<li style="float:right; display:block"><a>Register</a></li>
+						<li style="float:right; display:block"><a>My Searches</a></li>
+						<li style="float:right; display:block"><a>Recently Viewed</a></li>
+					</div>
+
+						
+					
+			
+			</ol>
+		</div>
+		</div>
 <br>
 <br>
+
+<div class="content">
 <div  class = "info2"> 
 	<label for="Check-In">Check-In</label>
 	<input id="Check-In" type="date" placeholder="Check-in" ><br><br>
@@ -41,25 +58,23 @@
 	<label for="Country">Country</label>
 	<input type = "text" placeholder="Country"></input><br><br>
 	<a class="submit" href="SubExample.html">SUBMIT</a>
+	<br>
+	<br>
 </div>
-<p class="img">
+<br>
+<div class="imgdiv">
 <img src="sydney.jpg" alt="Picture of Sydney Harbour">
-</p>
-<p class="img">
 	<img src="Beach.jpg" alt="Australian Beach">
-</p>
-<p>
 	<img src="Uluru.jpg" alt="Australian Monument; Uluru">
-
-</p>
+</div>
 	
-	
+</div>
 
 
-<footer>
+<footer style="position: static;">
 	<ol class = "foot">
-		<a href=""> About Us</a>
-		<a href=""> Contact Us</a>
+		<a href="AboutUs.html"> About Us</a>
+		<a href="ContactUs.html"> Contact Us</a>
 		<a href=""> Home </a>
 	</ol>
 </footer>
