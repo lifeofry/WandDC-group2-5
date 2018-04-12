@@ -1,0 +1,103 @@
+body{
+  font-family: Montserrat;
+}
+
+div {
+	padding:0px;
+	margin:0px;
+	border:0px;
+}
+body #container{
+	width:1200px;
+	border:1px solid black;
+	margin:10px auto 40px auto;
+	background-color:#F4F4F4;
+}
+
+#container #top{
+	height:50px;
+	width:1200px;
+}
+
+#container #top #logo{
+	float:left;
+	width:90px;
+	height:50px;
+  background-color:#00AEF0;
+}
+
+#container #top #currency{
+	float:right;
+	margin-right:10px;
+	width:180px;
+	height:50px;
+	background-color:green;
+}
+#container #top #navigation{
+	width:1200px;
+	height:50px;
+	background-color:#00AEF0;
+}
+
+#container #body{
+  margin-top:60px;
+  width:1200px;
+  height: 390px;
+  background-color:#F4F4F4;
+}
+
+#container #body #logbox{
+  border:2px solid #CCCCCC;
+  float: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 375px;
+  border-radius: 15px;
+  width:450px;
+  height:325px;
+  background-color: ghostwhite;
+}
+
+#container #bottom #footer{
+  width:1200px;
+  height:200px;
+  background-color: lightblue;
+}
+
+#centeralign{
+  text-align: center;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 95px;
+    overflow: hidden;
+    background-color: #00AEF0;
+}
+
+ul.nav li {
+   float: right;
+    font-family:'Raleway',"Sans serif";
+    font-size:0.8em;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: right;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+	color: #00AEF0;
+    background-color: white;
+}
+
+h1{
+  font-family: Nanum Gothic;
+}
+
+p{
+  font-family: Montserrat;
+}
