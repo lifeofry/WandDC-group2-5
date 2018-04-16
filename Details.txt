@@ -41,3 +41,65 @@ Page requirements:
   #8C8C8C background colour
   #E6E6E6 navigation bar colour
   #CCCCCC hover-over colour
+
+
+
+
+Milestone 3
+Login Page
+Register Page
+Index Page
+Contact Us Page
+Hotel Refinement Page
+Booking Page
+Accounts Profile Page
+Hotels Information
+Changing Currency
+
+Navigation Bar
+-Currency needs to change
+-From Register and Sign In to Accounts Profile 
+-This is a drop down box; Account Settings and Logout 
+-Username is the drop down box
+
+Login Page
+-Submit Information
+-Go to previous page that user was on
+-Nav Bar changes (Username etc.)
+
+Register Page
+-Submit your information
+- Same process as login page
+
+Index Page
+-Submit your information
+-Takes you to refinement page with remembered information
+-Show map of hotel location
+
+Contact Us Page
+-Submit your information
+-Thank you for contacting us
+-Back to index page
+
+Hotel Refinement Page
+-Click a hotel
+-Takes you to Hotel page
+-Zooms in on map to location
+-Apply filters, wait till user clicks it
+
+Booking Page
+-Remembers information
+-Shows you a page with all submitted booking details
+-Takes you back to home page or email receipt to user
+
+Accounts Profile Page
+-Remembers all information
+-As soon as user changes anything, option to save
+
+Hotels Page
+-Shows all details(according to refinement)
+-Option to take to booking page
+
+Change Currency
+-user clicks currency
+-changes all currency to desired currency
