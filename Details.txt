@@ -103,3 +103,21 @@ Hotels Page
 Change Currency
 -user clicks currency
 -changes all currency to desired currency
+
+
+Lecture 20/4
+Example 
+
+Search for hotels
+
+User: Start Date, End Date      SUPPLIED BY CLIENT, GET REQUES; query is url formatted
+      Location, Name etc        Or JSON response
+      
+Hotels                          FROM SERVER DATABASE 
+          Bunch of hotels
+          Price
+          Features
+          Picture
+          Address 
+          
+
