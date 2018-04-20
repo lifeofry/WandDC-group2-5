@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hotel Search</title>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway%7CNoto+Serif">
+	    <style type="text/css">
+<!--
+.STYLE1 {color: #0099FF}
+-->
+        </style>
+</head>
+	<body>
+		<div id="top">
+			<div style="width:1360px;margin:0 auto;">
+				<div id="logo">
+					<img src="loto.svg" alt="" width="200" height="50" style="float:left;margin-left:40px;">
+				</div>
+				<div id="navigation">
+					<ul class="nav">
+						<li>
+							<div class="dropdown">
+							  <button onclick="myFunction()" class="dropbtn" placeholder="$AUD">Currency</button>
+							  <div id="myDropdown" class="dropdown-content" style="float:right">
+								<a href="$AUD">$AUD</a>
+								<a href="€Euro">&euro;Euro</a>
+								<a href="$USD">$USD</a>
+								<a href="£GBP">£GBP</a>
+								</div>
+							</div>
+						</li>
+						<li><a>Recently Viewed</a></li>
+						<li><a>My Searches</a></li>
+						<li><a href="LogIn.html">Register</a></li>
+						<li><a href="signUp.html">Sign in</a></li>
+					</ul>
+				</div>
+
+
+			</div>
+		</div>
+
+		<div style="height:800px;width:100%;">
+			<div style="background-color:#00AEF0;width:100%;height:700px;">
+				<div id="mid-top">
+					<div id="l_content">
+						<div style="width:50%;margin:30px auto;">
+							<p style="margin-left:10px;">where?</p>
+							<input type="text" name="place" value="Adelaide" id="icon" style="margin:10px;width:330px;height:30px;">
+							<p style="margin-left:10px;">Check-in</p>
+							<img src="b.png" style="margin:0px 5px 0 4px;"><input type="text" name="place"  style="margin:10px;width:300px;height:30px;">
+							<p style="margin-left:10px;">Check-out</p>
+							<img src="b.png" style="margin:0px 5px 0 4px;"><input type="text" name="place"  style="margin:10px;width:300px;height:30px;">
+							<p style="margin-left:10px;">Rooms for</p>
+							 <select style="margin:10px 40px;width:300px;height:30px;">
+							   <option value="1">1</option>
+							   <option value="2">2</option>
+							   <option value="3">3</option>
+							   <option value="4" selected>4</option>
+							</select>
+							<a href="refinement.html"><div id="search-button"><p style="padding-top:17px;">Search</p></div></a>
+						</div>
+					</div>
+					<div id="r_content">
+						<h1 style="text-align:center;margin-top:150px;">The best hotel deals of South Australia</h1>
+						<img src="loto.svg" style="width:400px;margin-left:50px;">
+					</div>
+
+				</div>
+
+				<hr>
+				<div id="footer">
+
+					<h2><a href="termsofuse.html">Terms of Use</a> &nbsp;&nbsp;<a href="AboutUs.html">About Us</a> &nbsp;&nbsp;<a href="ContactUs.html">Contact Us</a></h2>
+
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="BookingPage.js"></script>
+</html>
