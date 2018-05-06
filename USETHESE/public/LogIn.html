@@ -3,20 +3,46 @@
   <head>
     <title>Login Page</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="stylesheets/file.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/LogIn.css">
     <link href='https://fonts.googleapis.com/css?family=Nanum+Gothic' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
-    <script src="javascripts/LogIn.js"></script>
+    <script src="LogIn.js"></script>
   </head>
   <body>
-    <header>
+    <script>
+      var People=[];
+      var Passwords=[];
+
+      function submitLogin(){
+        var UN=document.getElementById('UorE').value;
+        var PW=document.getElementById('Pw').value;
+
+        People.push(UN);
+        Passwords.push(PW);
+
+        var xhttp = new XMLHttpRequest();
+        
+        //Initiate Connection
+
+        xhttp.open("POST", "UserDetails.JSON", true);
+
+        xhttp.setRequestHeader("Content-type","application/json");
+
+      //sending the request
+      xhttp.send(JSON.stringify({People:UN, Passwords:PW}));
+
+      }
+
+    </script>
+    <div id="container">
+      <div id="top">
         <div id="logo">
           <a  id="linkpageindex" href="index.html">
             <img src="images/loto.svg" alt="" width="200" height="50">
           </a>
         </div>
-        <div>
+        <div id="navigation">
           <ul class="nav">
             <li><a style="font-family:Montserrat;font-size:12px;" href="LogIn.html">Sign in</a></li>
             <li><a style="font-family:Montserrat;font-size:12px;" href="signUp.html">Register</a></li>
@@ -24,23 +50,24 @@
             <li><a style="font-family:Montserrat;font-size:12px;">Recently Viewed</a></li>
 					</ul>
         </div>
-      </header>
-      <article>
+      </div>
+      <div id="body">
         <div id="logbox">
           <br>
           <h1>Sign In</h1>
           <p>Username or Email:</p>
-          <input type="text" name="UorE" ><br>
+          <input type="text" name="UorE" id="UorE"></br>
           <p>Password:</p>
-          <input type="text" name="Pw"><br>
+          <input type="text" name="Pw" id ="Pw"></br>
           <br>
-          <button onclick="alert('Successful SignIn!')">Sign In</button>
+          <button onclick="alert('Successful SignIn!')" onclick="submitLogin()" href="Index.html">Sign In</button>
           <br>
-          <p style="text-align:center"><a href="SignUp.html" style="text-align:center"> Don't have an account? Register.</a></p>
+          <p id="centeralign"><a href="SignUp.html"> Don't have an account? Register.</a></p>
         </div>
-    </article>
-      <footer>
-  			<p style="text-align:center"><a href="termsofuse.html" style="text-align:center"><u>Terms of Use</u></a> &nbsp;&nbsp;<a href="AboutUs.html"><u>About Us</u></a> &nbsp;&nbsp;<a href="ContactUs.html"><u>Contact Us</u></a></p>
-      </footer>
+      </div>
+      <div id="bottom">
+        <p id="centeralign"><a href="termsofuse.html"><u>Terms of Use</u></a> &nbsp;&nbsp;<a href="AboutUs.html"><u>About Us</u></a> &nbsp;&nbsp;<a href="ContactUs.html"><u>Contact Us</u></a></p>
+      </div>
+    </div>
   </body>
 </html>
