@@ -4,7 +4,7 @@ body {
 }
 
 header {
-
+  margin: 0 auto;
   width:100%;
   height:47px;
   background-color:#00AEF0;
@@ -109,7 +109,7 @@ p{
 #hotel{
   float:right;
 	height:370px;
-	width:920px;
+	width:800px;
 	border-radius: 10px;
 	border:2px solid #CCCCCC;
 	background-color:#F4F4F4;
@@ -117,9 +117,8 @@ p{
 }
 
 #box {
-  width:910px;
+  width:790px;
   height:360px;
-  margin-left: 5px;
   margin-top: 5px;
   border-radius: 10px;
   background-color: #F4F4F4;
@@ -128,7 +127,7 @@ p{
 #moreinfo{
   float: right;
 	height:375px;
-	width:920px;
+	width:800px;
 	border-radius: 10px;
 	background-color: #F4F4F4;
 	border:2px solid #CCCCCC;
@@ -145,6 +144,15 @@ p{
 	background-color:#11B95C;
 }
 
+#submit-button{
+	width:60px;
+	text-align:right;
+	height:25px;
+	border-radius:10px;
+	color:white;
+	margin:30px auto;
+	background-color:#11B95C;
+}
 #logbox {
   border:2px solid #CCCCCC;
   float: center;
@@ -348,7 +356,7 @@ a:hover{
 #right{
   margin-top: 25px;
 	margin-left:280px;
-	width:920px;
+	width:810px;
   border:2px solid #CCCCCC;
   border-radius: 15px;
   background-color: white;
@@ -359,4 +367,87 @@ a:hover{
 	width:260px;
 	background-color:white;
 	margin-top:20px;
+}
+
+#accinfo{
+  border:2px solid #CCCCCC;
+  float: right;
+  text-align: center;
+  margin-top: 25px;
+  margin-right: 200px;
+  border-radius: 15px;
+  margin-bottom:  50px;
+  width:600px;
+  height:800px;
+  background-color: ghostwhite;
+
+}
+
+#givereviewbox {
+  float:right;
+  height:290px;
+  width:800px;
+  border-radius: 10px;
+  border:2px solid #CCCCCC;
+  background-color:#F4F4F4;
+  margin-top:10px;
+}
+
+#termsbox{
+  border:2px solid #CCCCCC;
+  float: right;
+  text-align: left;
+  text-indent: 10px;
+  margin-top: 25px;
+  margin-right: 60px;
+  border-radius: 15px;
+  margin-bottom:  50px;
+  width:700px;
+  height:500px;
+  background-color: ghostwhite;
+  display:inline-block;
+  font-family: Ubuntu;
+}
+.centerdiv {
+  width:1200px;
+  margin: 0 auto;
+
+}
+
+.outsideheader{
+  width:1100px;
+  margin: 0 auto;
+}
+/*for vertical menu in account information*/
+.vertical-menu {
+    width: 200px;
+}
+
+.vertical-menu a {
+    border-radius: 15px;
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #00AEF0;
+    color: white;
+}
+
+.vertnav{
+  float:left;
+  margin-left: 90px;
+  margin-top: 25px;
+
+}
+
+.account {
+  width:1000px;
 }
