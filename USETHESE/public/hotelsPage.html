@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Hotel Page</title>
+		<title>HotelSearch - Hotel Page</title>
 		<link rel="stylesheet" type="text/css" href="stylesheets/file.css">
 		<link href='https://fonts.googleapis.com/css?family=Nanum+Gothic' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -10,12 +10,32 @@
 		<script src="javascripts/hotelsPage.js"></script>
 	</head>
 	<body>
-		<header>
-      <div id="logo">
-        <a id="linkpageindex" href="index.html">
-          <img src="images/loto.svg" alt="" width="200" height="50">
-        </a>
-      </div>
+		<script>
+			var fName=[];
+			var comments=[];
+
+			function submitFeedback(){
+				var nOfPeople=document.getElementById('First-Name').value;
+				var lOfComments=document.getElementById('Comment').value;
+
+				fName.push(nOfPeople);
+				comments.push(lOfComments);
+
+				var xhttp = new XMLHttpRequest();
+				xhttp.open("POST", "UserComments.JSON", true);
+
+				xhttp.setRequestHeader("Content-type", "application/json");
+				xhttp.send(JSON.stringify({fName:nOfPeople, comments:lOfComments}));
+			}
+		</script>
+
+		<div class="outsideheader">
+			<header>
+				<div id="logo">
+					<a  id="linkpageindex" href="index.html">
+						<img src="images/loto.svg" alt="" width="200" height="50">
+					</a>
+				</div>
       <ul class="nav">
 
         <li><a style="font-family:Montserrat;font-size:12px;" href="LogIn.html">Sign in</a></li>
@@ -37,7 +57,7 @@
     </header>
     <article>
       <div id="hotelname">
-        <h1 style="color:black;margin-top:30px;margin-bottom:-30px;">Park Hyatt Sydney</h1>
+        <h1 style="color:black;margin-top:30px;margin-bottom:30px;text-align:center;">Park Hyatt Sydney</h1>
       </div>
       <div id="search" style="color:white;">
         <div>
@@ -65,22 +85,29 @@
 					<br>
 					<br>
 					<br>
-					<img src="images/sydneyhotel.jpg" alt="Park Hotel Sydney" style="margin-left:200px;width:500px;height:250px;" />
+					<img src="images/sydneyhotel.jpg" alt="Park Hotel Sydney" style="margin-left:190px;width:500px;height:250px;" />
 				</div>
 			</div>
 			<div id="moreinfo">
 				<div id="textbox">
 					<br>
-					<p style="text-align:left;margin-left:10px;font-size:20px;">With panoramic views of Sydney Opera House, Park Hyatt Sydney is a five-star hotel that is difficult to fault.<br /> From the service that seeks to cater to each guest individually, the fine dining experience in The Dining Room, rooftop pool and excellent spa, this hotel is a truly luxurious experience.</p>
+					<p style="text-align:left;margin-left:10px;font-size:20px;">With panoramic views of Sydney Opera House, Park Hyatt Sydney is a five-star hotel that is difficult to fault. From the service that seeks to cater to each guest individually, the fine dining experience in The Dining Room, rooftop pool and excellent spa, this hotel is a truly luxurious experience.</p>
 					<br>
 					<p style="text-align:center"> "Very nice place. I loved everything." - A Trip Advisor Members</p>
 					<br>
 					<p style="text-align:center"><a href="BookingPage.html">Book Here</a></p>
 				</div>
 			</div>
+			<div id="givereviewbox">
+				<h3 style="margin-left:5px;">Stayed at this hotel? Review it!</h3>
+				<input style="margin: 0px 0px 0px 80px;" type="text" id="First-Name" placeholder="First Name"><br>
+				<input style="margin: 20px 0px 0px 80px;;" class ="input" id="Comment" placeholder="Review the hotel here..."><br>
+				<div style="text-align:right;margin-right:170px;"><button onclick="submitFeedback()">Submit</button></div>
+			</div>
     </article>
     <footer>
-			<p style="text-align:center"><a href="termsofuse.html" style="text-align:center"><u>Terms of Use</u></a> &nbsp;&nbsp;<a href="AboutUs.html"><u>About Us</u></a> &nbsp;&nbsp;<a href="ContactUs.html"><u>Contact Us</u></a></p>
+			<p style="text-align:center;"><a href="termsofuse.html" style="text-align:center"><u>Terms of Use</u></a> &nbsp;&nbsp;<a href="AboutUs.html"><u>About Us</u></a> &nbsp;&nbsp;<a href="ContactUs.html"><u>Contact Us</u></a></p>
     </footer>
+		</div>
 	</body>
 </html>
