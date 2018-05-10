@@ -3,17 +3,21 @@
   <head>
     <title>Login Page</title>
     <meta charset="utf-8">
+    <meta name="google-signin-scope" content="profile email">
+        <meta name="google-signin-client_id" content="318809459837-1qp4bc11ldlf7jjoqjoqndsso7329mf3.apps.googleusercontent.com">
     <link rel="stylesheet" type="text/css" href="stylesheets/file.css">
     <link href='https://fonts.googleapis.com/css?family=Nanum+Gothic' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
     <script src="javascripts/file.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
   </head>
   <body>
     <script>
-      var People=[];
-      var Passwords=[];
-      function submitLogin(){
+        var People=[];
+        var Passwords=[];
+        function submitLogin(){
         var UN=document.getElementById('UorE').value;
         var PW=document.getElementById('Pw').value;
         People.push(UN);
@@ -23,9 +27,25 @@
         //Initiate Connection
         xhttp.open("POST", "UserDetails.JSON", true);
         xhttp.setRequestHeader("Content-type","application/json");
-      //sending the request
-      xhttp.send(JSON.stringify({People:UN, Passwords:PW}));
-      }
+        //sending the request
+        xhttp.send(JSON.stringify({People:UN, Passwords:PW}));
+      };
+
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      };
+
+
     </script>
 
     <div class="outsideheader">
@@ -55,7 +75,13 @@
           <br>
           <button onclick="alert('Successful SignIn!')">Sign In</button>
           <br>
-          <p style="text-align:center"><a href="SignUp.html" style="text-align:center"> Don't have an account? Register.</a></p>
+          <hr>
+          <br>
+          <div style="margin-left:170px;"
+            <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+          </div>
+          <p style="text-align:center;margin-top:-80px;"><a href="SignUp.html" style="text-align:center"> Don't have an account? Register.</a></p>
+
         </div>
     </article>
       <footer>
