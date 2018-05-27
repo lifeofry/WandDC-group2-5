@@ -1,0 +1,95 @@
+USE hotelsearchdb;
+
+CREATE TABLE LOGIN
+    ( Username CHAR(50),
+      Password CHAR(50),
+      Session_ID INT(50),
+      primary key (Session_ID)
+    );
+
+CREATE TABLE SIGN_UP
+    ( D_O_B DATE,
+      Last_Name CHAR(50),
+      First_Name CHAR(50),
+      Password CHAR(50),
+      Email CHAR(50),
+      primary key (Session_ID)
+    );
+
+  CREATE TABLE USERS
+    ( Session_ID INT(50),
+      Registered INT(1),
+      Non_Registered INT(1),
+      primary key (Session_ID)
+    );
+
+  CREATE TABLE CONTACT_US
+    ( Session_ID INT(50),
+      Name CHAR(50),
+      Email CHAR(50),
+      Country CHAR(50),
+      Comment TEXT,
+      primary key (Session_ID)
+    );
+
+  CREATE TABLE NAME
+    ( Last_Name CHAR(50),
+      First_Name CHAR(50)
+    );
+
+  CREATE TABLE INDEX
+    ( Session_ID INT(50),
+      Location CHAR(50),
+      Check_In DATE,
+      Check_Out DATE,
+      primary key (Session_ID)
+    );
+
+  CREATE TABLE ACCOUNT_INFO
+    ( Session_ID INT(50),
+      Name CHAR(50),
+      Email CHAR(50),
+      Password CHAR(50),
+      primary key (Session_ID)
+    );
+
+  CREATE TABLE HOTELS_PAGE
+    ( Name_Of_Hotel CHAR(50),
+      Location CHAR(50),
+      Rating_Review DECIMAL(2,1),
+      primary key (Name_Of_Hotel)
+    );
+
+  CREATE TABLE HOTEL_REFINEMENT
+    ( Name_Of_Hotel CHAR(50),
+      Location CHAR(50),
+      Rating_Review DECIMAL(2,1),
+      primary key (Name_Of_Hotel)
+    );
+
+  CREATE TABLE MAP
+    ( Location CHAR(50),
+      primary key (Location)
+    );
+
+  CREATE TABLE BOOKING_PAGE
+    ( Session_ID INT(50),
+      Check_In DATE,
+      Check_Out DATE,
+      People INT(2),
+      First_Name CHAR(50),
+      Last_Name CHAR(50)
+      Email CHAR(50),
+      Country CHAR(50),
+      primary key (Session_ID)
+    );
+
+  CREATE TABLE GOOGLE_LOGIN
+    ( Session_ID INT(50),
+      Profile_ID INT(50),
+      Name CHAR(50),
+      Image_URL IMAGE,
+      Email CHAR(50),
+      ID_Token INT(50),
+      primary key (Session_ID)
+    );
